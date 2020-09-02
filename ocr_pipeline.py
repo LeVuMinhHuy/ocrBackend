@@ -325,7 +325,7 @@ def img_to_text(image):
     rect = cv2.boundingRect(poly)
     x,y,w,h = rect
     # croped = img[y:y+h, x:x+w].copy()
-    croped = img[y:y+h+4, x-1:x+w+1].copy()
+    croped = img[y:y+h, x:x+w].copy()
   
     # Preprocess croped segment
     croped = cv2.resize(croped, None, fx=5, fy=5, interpolation=cv2.INTER_LINEAR)
@@ -580,6 +580,7 @@ def process(img_path, city_id):
     # geolocator = Nominatim(user_agent="AIzaSyABrrKL3I5HZh7wx9QLCk7H5Rq0TrdtLjw")
     # location = geolocator.reverse(str(lat) + ', ' + str(lng))
     # print(location.address)
+    print(lat,lng)
     return lat, lng
   else:
     return 0,0

@@ -5,6 +5,7 @@ scipy==1.1.0
 argparse
 numpy==1.15.0
 pytesseract
+tesseract
 pyproj
 psycopg2
 flask
