@@ -1,0 +1,10 @@
+version: '2.2'
+services:
+    web:
+        build: .
+        container_name: ocrapi
+        ports:
+            - 127.0.0.1:5000:5000
+        tty: true
+#        volumes:
+ #           - ./app:./app	
