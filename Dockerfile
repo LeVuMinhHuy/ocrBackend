@@ -13,6 +13,6 @@ RUN pip install -r requirements.txt
 
 ENTRYPOINT ["python"]
 
-CMD ["app.py"]
+CMD ["app_herroku.py"]
 
 
